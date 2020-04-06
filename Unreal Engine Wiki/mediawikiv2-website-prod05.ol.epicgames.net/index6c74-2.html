@@ -79,7 +79,7 @@ window.__locale = '';
 											<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
 						<h3 id="p-namespaces-label">Namespaces</h3>
 						<ul>
-														<li id="ca-nstab-main" class="selected"><span><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Physical_Water_Surface" title="View the content page [c]" accesskey="c">Page</a></span></li>
+														<li id="ca-nstab-main" class="selected"><span><a href="indexad96.html?title=Physical_Water_Surface" title="View the content page [c]" accesskey="c">Page</a></span></li>
 							<li id="ca-talk" class="new"><span><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Talk:Physical_Water_Surface&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></span></li>
 						</ul>
 					</div>
@@ -99,8 +99,8 @@ window.__locale = '';
 						<h3 id="p-views-label">Views</h3>
 						<ul>
 														<li id="ca-view" class="selected"><span><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Physical_Water_Surface">Read</a></span></li>
-							<li id="ca-viewsource"><span><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Physical_Water_Surface&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></span></li>
-							<li id="ca-history" class="collapsible"><span><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Physical_Water_Surface&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+							<li id="ca-viewsource"><span><a href="indexad96.html?title=Physical_Water_Surface&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></span></li>
+							<li id="ca-history" class="collapsible"><span><a href="indexad96.html?title=Physical_Water_Surface&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
 						</ul>
 					</div>
 										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
@@ -407,7 +407,7 @@ For buoyancy, the Gerstner equations are evaluated also in Blueprint, using the 
 </p><p><b>Random Phase Seed:</b> <a rel="nofollow" class="external text" href="https://docs.unrealengine.com/latest/INT/Engine/Blueprints/UserGuide/RandomStreams/#initialseed">Random Seed</a> for the water motion. Change this value to get a different random water motion when the game starts.
 </p><p><a rel="nofollow" class="external text" href="https://www.youtube.com/watch?v=Woik6p983BE">Watch this video</a> to see some of the different sea states that are possible.
 </p><p><b>Debug:</b> Draw debug messages on screen.
-</p><p><b>Wind Direction:</b> Wind direction in degrees. To change the wind direction while the game is running don't set this parameter. Instead, use the <a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Physical_Water_Surface#Seamless_Sea_State_Transitions" title="Physical Water Surface">ChangeSeaState Function.</a>
+</p><p><b>Wind Direction:</b> Wind direction in degrees. To change the wind direction while the game is running don't set this parameter. Instead, use the <a href="indexad96.html?title=Physical_Water_Surface#Seamless_Sea_State_Transitions" title="Physical Water Surface">ChangeSeaState Function.</a>
 </p>
 <h3><span class="mw-headline" id="WaterPlane_Blueprint">WaterPlane Blueprint</span></h3>
 <div class="thumb tright"><div class="thumbinner" style="width:394px;"><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:WaterPlane.png" class="image"><img alt="" src="https://d26ilriwvtzlb.cloudfront.net/3/37/WaterPlane.png" width="392" height="431" class="thumbimage" /></a>  <div class="thumbcaption">WaterPlane Blueprint Parameters</div></div></div>
@@ -509,7 +509,7 @@ If you are using an engine version between 4.10 and 4.13, you will find that FXA
 <p>If you encounter this behavior after updating your project to 4.17, here is how to easily fix it. Open the <b>Construction Script</b> of the <b>WaterPlane Blueprint</b> and add a <b>Make Literal Bool</b> node that is set to <b>True</b> and connect it to the <b>Update Wave Parameters</b> node. After compiling and saving this Blueprint, the water will be visible again. It seems that there is a bug in 4.17 that changes the default value from True to False, and adding the Make Literal Bool node fixes that.
 </p>
 <div class="center"><div class="thumb tnone"><div class="thumbinner" style="width:598px;"><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:LiteralBool.png" class="image"><img alt="" src="https://d26ilriwvtzlb.cloudfront.net/b/b1/LiteralBool.png" width="596" height="272" class="thumbimage" /></a>  <div class="thumbcaption">Add a <b>Make Literal Bool</b> node like this</div></div></div></div>
-<p><b>Please note:</b> With <a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Physical_Water_Surface#Update_4:_April_5.2C_2018" title="Physical Water Surface">Update 4 of Physical Water Surface</a> this function was removed from the construction script and the problem should not occur any more.
+<p><b>Please note:</b> With <a href="indexad96.html?title=Physical_Water_Surface#Update_4:_April_5.2C_2018" title="Physical Water Surface">Update 4 of Physical Water Surface</a> this function was removed from the construction script and the problem should not occur any more.
 </p>
 <h5><span class="mw-headline" id="Can_I_scale_the_water_plane_to_adjust_the_size_of_the_waves_to_the_scale_of_my_game.3F">Can I scale the water plane to adjust the size of the waves to the scale of my game?</span></h5>
 <p>The water equations are implemented under the assumption that one Unreal Unit (UU) is equal to one centimeter. If the objects in your game have a different scale, the size and speed of the waves will not be correct. You can't just scale the water plane because the shape of the waves is determined by equations, independent of the object scaling. In fact, the Infinite Ocean System (if enabled) is constantly scaling the water plane up and down depending on the camera height.
@@ -527,7 +527,7 @@ If you are using an engine version between 4.10 and 4.13, you will find that FXA
 <p>To prevent this from happening, edit the WaterPlane Blueprint. Click on the WaterPlane StaticMeshComponent in the Blueprint Editor, and set the CollisionPreset to NoCollision.
 </p>
 <h5><span class="mw-headline" id="When_the_game_starts.2C_objects_that_have_buoyancy_enabled_are_shot_upwards_into_the_sky._This_happens_if_the_Water_Plane_is_placed_at_a_position_with_the_Z_coordinate_not_equal_to_zero">When the game starts, objects that have buoyancy enabled are shot upwards into the sky. This happens if the Water Plane is placed at a position with the Z coordinate not equal to zero</span></h5>
-<p>This bug was fixed in <a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Physical_Water_Surface#Update_3:_February_9.2C_2018" title="Physical Water Surface">Update 3 of Physical Water Surface</a>. Please update the Buoyancy Blueprint to the newest version.
+<p>This bug was fixed in <a href="indexad96.html?title=Physical_Water_Surface#Update_3:_February_9.2C_2018" title="Physical Water Surface">Update 3 of Physical Water Surface</a>. Please update the Buoyancy Blueprint to the newest version.
 </p>
 <h5><span class="mw-headline" id="How_do_I_enable_SSR.3F">How do I enable SSR?</span></h5>
 <p>Actually, SSR are enabled by default, but Depending on the settings in the Water Material Instance and the lighting conditions, the SSR might not be visible. Check out the <a rel="nofollow" class="external text" href="http://gfycat.com/SnivelingDeliciousAnteater">AltArtStyle demo map</a> where the SSR are clearly visible.
@@ -551,7 +551,7 @@ If you are using an engine version between 4.10 and 4.13, you will find that FXA
 <p>Yes, this is supported and has been verified to work with engine version 4.14 and higher. You should enable this option when packaging your project for a significant increase in buoyancy performance. If you get an error when packaging with this option enabled, please see the next question.
 </p>
 <h5><span class="mw-headline" id="I_get_an_error_when_packaging_with_the_Nativize_Blueprint_Assets_option_enabled">I get an error when packaging with the Nativize Blueprint Assets option enabled</span></h5>
-<p><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Physical_Water_Surface#Update_2:_February_7.2C_2017" title="Physical Water Surface">Update 2 of Physical Water Surface</a> fixed a small bug that prevented successful packaging with Blueprint Nativization enabled. If you need to apply this bugfix to your project, here is how:
+<p><a href="indexad96.html?title=Physical_Water_Surface#Update_2:_February_7.2C_2017" title="Physical Water Surface">Update 2 of Physical Water Surface</a> fixed a small bug that prevented successful packaging with Blueprint Nativization enabled. If you need to apply this bugfix to your project, here is how:
 </p><p>Open the WaterPlane Blueprint and search for the "Clamp (float)" Node. Change the Max value from 1e100000 to 1e10.
 </p>
 <h5><span class="mw-headline" id="How_can_I_make_the_water_transparent.3F">How can I make the water transparent?</span></h5>
@@ -600,7 +600,7 @@ A new example map <b>ManualPoints</b> is included with a box that has manually d
 <div class="center"><div class="thumb tnone"><div class="thumbinner" style="width:449px;"><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:ChangeSeaState2.png" class="image"><img alt="" src="https://d26ilriwvtzlb.cloudfront.net/8/89/ChangeSeaState2.png" width="447" height="374" class="thumbimage" /></a>  <div class="thumbcaption">Triggering a seamless sea state transition</div></div></div></div>
 <p><br />
 <b>Support for Blueprint Nativization to C++</b>
-</p><p>This update fixes a bug that prevented successful packaging with <a rel="nofollow" class="external text" href="https://docs.unrealengine.com/en-us/Engine/Blueprints/TechnicalGuide/NativizingBlueprints">Nativize Blueprint Assets</a> enabled. I've verified that Blueprint Nativization works now with engine versions 4.14 and 4.15.  <a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Physical_Water_Surface#Can_I_use_the_Nativize_Blueprint_Assets_option_when_packaging_to_convert_all_Blueprints_to_C.2B.2B_code.3F" title="Physical Water Surface">For more information see here</a>.
+</p><p>This update fixes a bug that prevented successful packaging with <a rel="nofollow" class="external text" href="https://docs.unrealengine.com/en-us/Engine/Blueprints/TechnicalGuide/NativizingBlueprints">Nativize Blueprint Assets</a> enabled. I've verified that Blueprint Nativization works now with engine versions 4.14 and 4.15.  <a href="indexad96.html?title=Physical_Water_Surface#Can_I_use_the_Nativize_Blueprint_Assets_option_when_packaging_to_convert_all_Blueprints_to_C.2B.2B_code.3F" title="Physical Water Surface">For more information see here</a>.
 </p><p><br />
 <b>Support for NavMesh</b>
 The WaterPlane Blueprint that comes with Physical Water Surface now supports NavMesh. If you place a Nav Mesh Bounds Volume in the map, NavMesh will build on the water surface.
@@ -626,7 +626,7 @@ The WaterPlane Blueprint that comes with Physical Water Surface now supports Nav
 </p>
 <h5><span class="mw-headline" id="Update_4:_April_5.2C_2018">Update 4: April 5, 2018</span></h5>
 <p><b>Performance Improvements</b>
-</p><p><a rel="nofollow" class="external text" href="http://gfycat.com/ReliableWarlikeGull">The DemoMap with 9 floating objects</a> now runs at a frame rate of 180 FPS. Without any floating objects, the water surface runs at over 300 FPS. <a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Physical_Water_Surface#How_is_the_performance.3F" title="Physical Water Surface">Details about the performance benchmark can be found here.</a>
+</p><p><a rel="nofollow" class="external text" href="http://gfycat.com/ReliableWarlikeGull">The DemoMap with 9 floating objects</a> now runs at a frame rate of 180 FPS. Without any floating objects, the water surface runs at over 300 FPS. <a href="indexad96.html?title=Physical_Water_Surface#How_is_the_performance.3F" title="Physical Water Surface">Details about the performance benchmark can be found here.</a>
 </p><p><br />
 <b>Hiding Water inside of Boats</b>
 </p><p>A method is provided to mask out water inside of boats, making use of <a rel="nofollow" class="external text" href="https://docs.unrealengine.com/en-us/Engine/Rendering/LightingAndShadows/MeshDistanceFields">Mesh Distance Fields</a> (Blend Mode Masked). A new Map MaskedWater is included that demonstrates the setup.
@@ -640,7 +640,7 @@ Additionally, the ChangeSeaState function now has a new input TransitionQuality
 <b>Wind Direction Transitions</b>
 </p><p>The wind direction can now be changed while the game is running. Use the the input NewWindDirectionDegrees of the ChangeSeaState function to trigger a wind direction transition. To set the initial wind direction use the Wind Direction variable of the WaterSettings Blueprint.
 The new map WindDirectionTransition demonstrates how a wind direction transition is performed.
-<a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Physical_Water_Surface#Seamless_Sea_State_Transitions" title="Physical Water Surface">For details see the documentation about sea state transitions.</a>
+<a href="indexad96.html?title=Physical_Water_Surface#Seamless_Sea_State_Transitions" title="Physical Water Surface">For details see the documentation about sea state transitions.</a>
 </p>
 <div class="center"><div class="thumb tnone"><div class="thumbinner" style="width:449px;"><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:ChangeSeaState2.png" class="image"><img alt="" src="https://d26ilriwvtzlb.cloudfront.net/8/89/ChangeSeaState2.png" width="447" height="374" class="thumbimage" /></a>  <div class="thumbcaption">Triggering a seamless sea state transition</div></div></div></div>
 <p><br />
@@ -651,7 +651,7 @@ The new map WindDirectionTransition demonstrates how a wind direction transitio
 <p><br />
 <b>Network Replication: New Wiki Chapter and TimeOffset Material Parameter </b>
 This new material parameter is needed when Physical Water Surface is used with Networking and the water motion needs to be replicated.
-<a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Physical_Water_Surface#Network_Replication" title="Physical Water Surface">A new section in the wiki about networking</a> explains how to use this parameter.
+<a href="indexad96.html?title=Physical_Water_Surface#Network_Replication" title="Physical Water Surface">A new section in the wiki about networking</a> explains how to use this parameter.
 </p><p><br />
 <b>Events when entering and leaving the Water</b>
 </p><p>Two events HasEnteredWater and HasLeftWater are provided in the Buoyancy Blueprint that are triggered when a a floating objects enters or leave the water.
@@ -686,7 +686,7 @@ Transclusion expansion time report (%,ms,calls,template)
  -->
 </div>						<div class="printfooter">
 							Retrieved from "<a dir="ltr" href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Physical_Water_Surface&amp;oldid=107">https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Physical_Water_Surface&amp;oldid=107</a>"						</div>
-					<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Special:Categories" title="Special:Categories">Categories</a>: <ul><li><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Category:Tutorials&amp;action=edit&amp;redlink=1" class="new" title="Category:Tutorials (page does not exist)">Tutorials</a></li><li><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Category:Community_Created_Content" title="Category:Community Created Content">Community Created Content</a></li><li><a href="indexa824.html?title=Category:Material" title="Category:Material">Material</a></li><li><a href="index17bc.html?title=Category:Blueprint" title="Category:Blueprint">Blueprint</a></li></ul></div></div>					<div class="visualClear"></div>
+					<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Special:Categories" title="Special:Categories">Categories</a>: <ul><li><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Category:Tutorials&amp;action=edit&amp;redlink=1" class="new" title="Category:Tutorials (page does not exist)">Tutorials</a></li><li><a href="index290f-2.html?title=Category:Community_Created_Content" title="Category:Community Created Content">Community Created Content</a></li><li><a href="indexa824.html?title=Category:Material" title="Category:Material">Material</a></li><li><a href="index17bc.html?title=Category:Blueprint" title="Category:Blueprint">Blueprint</a></li></ul></div></div>					<div class="visualClear"></div>
 									</div>
 			</div>
 		</div>

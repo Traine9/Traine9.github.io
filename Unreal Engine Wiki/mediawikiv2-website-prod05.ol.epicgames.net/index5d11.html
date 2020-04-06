@@ -79,7 +79,7 @@ window.__locale = '';
 											<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
 						<h3 id="p-namespaces-label">Namespaces</h3>
 						<ul>
-														<li id="ca-nstab-main" class="selected"><span><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=NPC_Dialogue_System_Tutorial" title="View the content page [c]" accesskey="c">Page</a></span></li>
+														<li id="ca-nstab-main" class="selected"><span><a href="indexca83-2.html?title=NPC_Dialogue_System_Tutorial" title="View the content page [c]" accesskey="c">Page</a></span></li>
 							<li id="ca-talk" class="new"><span><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Talk:NPC_Dialogue_System_Tutorial&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></span></li>
 						</ul>
 					</div>
@@ -99,8 +99,8 @@ window.__locale = '';
 						<h3 id="p-views-label">Views</h3>
 						<ul>
 														<li id="ca-view" class="selected"><span><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=NPC_Dialogue_System_Tutorial">Read</a></span></li>
-							<li id="ca-viewsource"><span><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=NPC_Dialogue_System_Tutorial&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></span></li>
-							<li id="ca-history" class="collapsible"><span><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=NPC_Dialogue_System_Tutorial&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+							<li id="ca-viewsource"><span><a href="indexca83-2.html?title=NPC_Dialogue_System_Tutorial&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></span></li>
+							<li id="ca-history" class="collapsible"><span><a href="indexca83-2.html?title=NPC_Dialogue_System_Tutorial&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
 						</ul>
 					</div>
 										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
@@ -157,7 +157,7 @@ window.__locale = '';
 <div>
 <p>To begin, create an Actor Blueprint. Mine is named “TextRenderingActor” but any name will do. While you are at it, create a widget blueprint. The one I used in this example is just called widget. This isn’t a good name for a project, especially when you will have more than one of these available, so I would recommend using a different name. The components you will need for this setup are fairly few. As you can see below, all I used was a scene component to hold the root. Then a box component scaled so that the player can walk into it, a skeletal mesh (Daniel), and a text render actor.</p> 
 <p><br />
-<a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:Components_Assets.png" class="image"><img alt="Components Assets.png" src="https://d3ar1piqh1oeli.cloudfront.net/e/e0/Components_Assets.png/560px-Components_Assets.png" width="560" height="340" srcset="https://d3ar1piqh1oeli.cloudfront.net/e/e0/Components_Assets.png/840px-Components_Assets.png 1.5x, https://d3ar1piqh1oeli.cloudfront.net/e/e0/Components_Assets.png/1120px-Components_Assets.png 2x" /></a> 
+<a href="index6a18.html?title=File:Components_Assets.png" class="image"><img alt="Components Assets.png" src="https://d3ar1piqh1oeli.cloudfront.net/e/e0/Components_Assets.png/560px-Components_Assets.png" width="560" height="340" srcset="https://d3ar1piqh1oeli.cloudfront.net/e/e0/Components_Assets.png/840px-Components_Assets.png 1.5x, https://d3ar1piqh1oeli.cloudfront.net/e/e0/Components_Assets.png/1120px-Components_Assets.png 2x" /></a> 
 <br />
 </p>
 <p>This blueprint does require a number of variables, most of which are public so they can be edited to fit each individual NPC. In my example I have 12 different arrays, which have a number of variables for each ranging from 1-3. All of these as well as the “I must go” variable are public. The array variable is extremely important to the UMG setup so make sure to have a text array variable in place. Ours is called ButtonText. Additionally, you will need at least two int variables. One to update your selector and one to affect how the function interacts with your button presses. I named these Update Array and Int.</p>
@@ -171,7 +171,7 @@ window.__locale = '';
 <p>Now that you have this set up, go ahead and make a “Create widget” node, with the class set as your widget that you set up earlier. The owning player again should be your player controller. The next step is create an Add to Viewport node, with the target set to the return value of your create widget node. This will set the widget to your viewport.</p>
 <p>Cast to your player controller and from the “As Player Controller” output pin, get a “Set Show Mouse Cursor” node, check the checkbox to set it to true. This is necessary to be able to interact with the UMG widget. Finally, get a set of your text array.</p>
 <p><br />
-<a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:Begin_End_Overlap.png" class="image"><img alt="Begin End Overlap.png" src="https://d3ar1piqh1oeli.cloudfront.net/9/9e/Begin_End_Overlap.png/560px-Begin_End_Overlap.png" width="560" height="198" srcset="https://d3ar1piqh1oeli.cloudfront.net/9/9e/Begin_End_Overlap.png/840px-Begin_End_Overlap.png 1.5x, https://d3ar1piqh1oeli.cloudfront.net/9/9e/Begin_End_Overlap.png/1120px-Begin_End_Overlap.png 2x" /></a>
+<a href="indexb544.html?title=File:Begin_End_Overlap.png" class="image"><img alt="Begin End Overlap.png" src="https://d3ar1piqh1oeli.cloudfront.net/9/9e/Begin_End_Overlap.png/560px-Begin_End_Overlap.png" width="560" height="198" srcset="https://d3ar1piqh1oeli.cloudfront.net/9/9e/Begin_End_Overlap.png/840px-Begin_End_Overlap.png 1.5x, https://d3ar1piqh1oeli.cloudfront.net/9/9e/Begin_End_Overlap.png/1120px-Begin_End_Overlap.png 2x" /></a>
 <br /> 
 </p>
 <p>For the End overlap (and Leaving custom event), you will simply be undoing the actions you did in your begin overlap. Create a disable input node, set your text in your actor (I used goodbye), set the Update Array var to 0 (this will be explained shortly), remove the widget from your viewport, then cast to your player controller and set show mouse cursor to false. This can be seen in the above image.</p> 
@@ -195,7 +195,7 @@ window.__locale = '';
 <p>The next part is creating the selector. All you have to do is type “Select” into the context menu and it will show up. This node is very powerful, but it is also extremely fragile. Before adding anything to it, make sure you have the exact number of input pins for your arrays. So if you have 12 arrays, make sure to have exactly 12 input pins. If you have any pins leftover it will not compile and will throw warnings into your script until you delete the node and recreate it or find more arrays to fill the additional nodes. Anytime you alter the amount of arrays you are using you will have to create a new Selector. To add option pins, right click the node and press “Add Option Pin”.</p>
 <p>Set your index to your Update Array variable. This is the main reason it is important to set the update array to 0 when you leave the overlap. This will 0 out the information held so that the conversation can start over when you re-enter the overlap. You can also ignore this to save the conversation at a specific point if you want to. Plug the output pins of your arrays into each option of the selector in the order you want them to appear. Additionally, take the array output from the first array and plug it into your “Set Button Text” from the “Begin Overlap” function created earlier.</p> 
 <p><br />
-<a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:ArraySelector_PlayerResponses.png" class="image"><img alt="ArraySelector PlayerResponses.png" src="https://d3ar1piqh1oeli.cloudfront.net/0/0b/ArraySelector_PlayerResponses.png/560px-ArraySelector_PlayerResponses.png" width="560" height="679" srcset="https://d26ilriwvtzlb.cloudfront.net/0/0b/ArraySelector_PlayerResponses.png 1.5x" /></a>
+<a href="indexbefa.html?title=File:ArraySelector_PlayerResponses.png" class="image"><img alt="ArraySelector PlayerResponses.png" src="https://d3ar1piqh1oeli.cloudfront.net/0/0b/ArraySelector_PlayerResponses.png/560px-ArraySelector_PlayerResponses.png" width="560" height="679" srcset="https://d26ilriwvtzlb.cloudfront.net/0/0b/ArraySelector_PlayerResponses.png 1.5x" /></a>
 <br />
 </p>
 </div> 
@@ -203,7 +203,7 @@ window.__locale = '';
 <div>
 <p>The final step to finishing your blueprint is to tell the blueprint what to do when you make specific selections. Create a branch node. All of your input custom events (Answer1, Answer2, Answer3) should be plugged into this branch. The only one you will want to keep away from this is Answer4, because that deals specifically with getting out of the conversation.</p> 
 <p><br />
-<a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:Question0_Setup.png" class="image"><img alt="Question0 Setup.png" src="https://d3ar1piqh1oeli.cloudfront.net/7/7c/Question0_Setup.png/560px-Question0_Setup.png" width="560" height="284" srcset="https://d3ar1piqh1oeli.cloudfront.net/7/7c/Question0_Setup.png/840px-Question0_Setup.png 1.5x, https://d3ar1piqh1oeli.cloudfront.net/7/7c/Question0_Setup.png/1120px-Question0_Setup.png 2x" /></a>
+<a href="index3330.html?title=File:Question0_Setup.png" class="image"><img alt="Question0 Setup.png" src="https://d3ar1piqh1oeli.cloudfront.net/7/7c/Question0_Setup.png/560px-Question0_Setup.png" width="560" height="284" srcset="https://d3ar1piqh1oeli.cloudfront.net/7/7c/Question0_Setup.png/840px-Question0_Setup.png 1.5x, https://d3ar1piqh1oeli.cloudfront.net/7/7c/Question0_Setup.png/1120px-Question0_Setup.png 2x" /></a>
 <br /> 
 </p>
 <p>This branch should check to see if the Update Array Int is equal to 0, if it is not, it will move on to the next in the series (Update Array == 1) and so on and so forth. If it is true (this is true of each case), the branch runs a series of checks. If the input you selected set Int to 0, it sets the text render actors text to a specific value (In my case, “Would you like to take a nap?”) then it updates the Update Array to a new value, in my case, 1. This is designed to take you to a specific array in your selector for your new set of responses based on the NPC’s reaction.</p> 
@@ -221,7 +221,7 @@ window.__locale = '';
 </p>
 <p>Once you are done with these steps, your blueprint will probably look a little something like this:</p> 
 <p><br />
-<a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:Full_Dialogue_Blueprint.png" class="image"><img alt="Full Dialogue Blueprint.png" src="https://d3ar1piqh1oeli.cloudfront.net/e/ea/Full_Dialogue_Blueprint.png/560px-Full_Dialogue_Blueprint.png" width="560" height="541" srcset="https://d26ilriwvtzlb.cloudfront.net/e/ea/Full_Dialogue_Blueprint.png 1.5x" /></a>
+<a href="index38e0.html?title=File:Full_Dialogue_Blueprint.png" class="image"><img alt="Full Dialogue Blueprint.png" src="https://d3ar1piqh1oeli.cloudfront.net/e/ea/Full_Dialogue_Blueprint.png/560px-Full_Dialogue_Blueprint.png" width="560" height="541" srcset="https://d26ilriwvtzlb.cloudfront.net/e/ea/Full_Dialogue_Blueprint.png 1.5x" /></a>
 </p>
 </div>
 <h2><span class="mw-headline" id="UMG">UMG</span></h2>
@@ -236,7 +236,7 @@ window.__locale = '';
 </p>
 <p>For each button, do a “Get all Actors of Class” then a “ForEachLoop”, casting to the NPC character. Then drag off of the “as NPC” pin and call your custom input events.</p> 
 <p><br />
-<a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:Setting_the_buttons.png" class="image"><img alt="Setting the buttons.png" src="https://d3ar1piqh1oeli.cloudfront.net/6/67/Setting_the_buttons.png/560px-Setting_the_buttons.png" width="560" height="397" srcset="https://d3ar1piqh1oeli.cloudfront.net/6/67/Setting_the_buttons.png/840px-Setting_the_buttons.png 1.5x, https://d26ilriwvtzlb.cloudfront.net/6/67/Setting_the_buttons.png 2x" /></a> 
+<a href="indexeac6.html?title=File:Setting_the_buttons.png" class="image"><img alt="Setting the buttons.png" src="https://d3ar1piqh1oeli.cloudfront.net/6/67/Setting_the_buttons.png/560px-Setting_the_buttons.png" width="560" height="397" srcset="https://d3ar1piqh1oeli.cloudfront.net/6/67/Setting_the_buttons.png/840px-Setting_the_buttons.png 1.5x, https://d26ilriwvtzlb.cloudfront.net/6/67/Setting_the_buttons.png 2x" /></a> 
 <br />
 </p>
 <p>Next, select one of your text blocks in the widget design tab. Press bind in the “Content” section of the details pane, then “Create binding”.</p> 
@@ -311,7 +311,7 @@ Transclusion expansion time report (%,ms,calls,template)
  -->
 </div>						<div class="printfooter">
 							Retrieved from "<a dir="ltr" href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=NPC_Dialogue_System_Tutorial&amp;oldid=121">https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=NPC_Dialogue_System_Tutorial&amp;oldid=121</a>"						</div>
-					<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Special:Categories" title="Special:Categories">Categories</a>: <ul><li><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Category:Tutorials&amp;action=edit&amp;redlink=1" class="new" title="Category:Tutorials (page does not exist)">Tutorials</a></li><li><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Category:Epic_Created_Content" title="Category:Epic Created Content">Epic Created Content</a></li></ul></div></div>					<div class="visualClear"></div>
+					<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Special:Categories" title="Special:Categories">Categories</a>: <ul><li><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Category:Tutorials&amp;action=edit&amp;redlink=1" class="new" title="Category:Tutorials (page does not exist)">Tutorials</a></li><li><a href="indexa27e.html?title=Category:Epic_Created_Content" title="Category:Epic Created Content">Epic Created Content</a></li></ul></div></div>					<div class="visualClear"></div>
 									</div>
 			</div>
 		</div>

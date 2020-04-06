@@ -79,7 +79,7 @@ window.__locale = '';
 											<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
 						<h3 id="p-namespaces-label">Namespaces</h3>
 						<ul>
-														<li id="ca-nstab-main" class="selected"><span><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Tutorial:_Time_of_Day" title="View the content page [c]" accesskey="c">Page</a></span></li>
+														<li id="ca-nstab-main" class="selected"><span><a href="index88a1.html?title=Tutorial:_Time_of_Day" title="View the content page [c]" accesskey="c">Page</a></span></li>
 							<li id="ca-talk" class="new"><span><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Talk:Tutorial:_Time_of_Day&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></span></li>
 						</ul>
 					</div>
@@ -99,8 +99,8 @@ window.__locale = '';
 						<h3 id="p-views-label">Views</h3>
 						<ul>
 														<li id="ca-view" class="selected"><span><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Tutorial:_Time_of_Day">Read</a></span></li>
-							<li id="ca-viewsource"><span><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Tutorial:_Time_of_Day&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></span></li>
-							<li id="ca-history" class="collapsible"><span><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Tutorial:_Time_of_Day&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+							<li id="ca-viewsource"><span><a href="index88a1.html?title=Tutorial:_Time_of_Day&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></span></li>
+							<li id="ca-history" class="collapsible"><span><a href="index88a1.html?title=Tutorial:_Time_of_Day&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
 						</ul>
 					</div>
 										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
@@ -173,7 +173,7 @@ This tutorial will guide you through the steps of setting up a dynamic day-night
 </p>
 <h2><span class="mw-headline" id="Level_Blueprint">Level Blueprint</span></h2>
 <p>To actually get the time of day to progress, we need to use the Level Blueprint to rotate our Directional Light.  You could use Matinee or a Timeline, but here I will just add some rotation to the sun every frame.
-</p><p><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:TODTut_LevelBlueprint.JPG" class="image" title="TODTut_LevelBlueprint.JPG"><img alt="TODTut_LevelBlueprint.JPG" src="https://d26ilriwvtzlb.cloudfront.net/3/3b/TODTut_LevelBlueprint.JPG" width="1225" height="461" /></a>
+</p><p><a href="index4915.html?title=File:TODTut_LevelBlueprint.JPG" class="image" title="TODTut_LevelBlueprint.JPG"><img alt="TODTut_LevelBlueprint.JPG" src="https://d26ilriwvtzlb.cloudfront.net/3/3b/TODTut_LevelBlueprint.JPG" width="1225" height="461" /></a>
 </p><p>A quick explanation of the code:
 </p>
 <ul><li> Every "<b>Tick</b>," or frame, we are adding some rotation to the pitch of the directional light.</li></ul>
@@ -187,7 +187,7 @@ This tutorial will guide you through the steps of setting up a dynamic day-night
 </p><p><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:TODTut_FinalScene_Combo.jpg" class="image"><img alt="TODTut FinalScene Combo.jpg" src="https://d3ar1piqh1oeli.cloudfront.net/e/ec/TODTut_FinalScene_Combo.jpg/1000px-TODTut_FinalScene_Combo.jpg" width="1000" height="576" srcset="https://d26ilriwvtzlb.cloudfront.net/e/ec/TODTut_FinalScene_Combo.jpg 1.5x" /></a> 
 </p>
 <h2><span class="mw-headline" id="Using_Dynamic_Global_Illumination">Using Dynamic Global Illumination</span></h2>
-<p>A time of day system works best with dynamic GI.  Although this feature is as of yet not fully implemented, you can find information on enabling it <a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Light_Propagation_Volumes_GI" title="Light Propagation Volumes GI">here</a>.
+<p>A time of day system works best with dynamic GI.  Although this feature is as of yet not fully implemented, you can find information on enabling it <a href="index4497.html?title=Light_Propagation_Volumes_GI" title="Light Propagation Volumes GI">here</a>.
 </p><p><br />
 </p>
 <h2><span class="mw-headline" id="Troubleshooting_the_Sun">Troubleshooting the Sun</span></h2>
@@ -210,7 +210,7 @@ This tutorial will guide you through the steps of setting up a dynamic day-night
 <h2><span class="mw-headline" id="Changing_the_Environment">Changing the Environment</span></h2>
 <p>You may want to have a way for the level to know whether it is night or day.  If you are using a Matinee sequence, it is pretty easy to do this; just put custom events into your Matinee to trigger the desired results.  However, if you are using the method I demonstrated above, it can be more tricky.
 </p><p>Here is the blueprint, with logic for checking day vs. night:
-</p><p><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:TODTut_GetSunRotation.JPG" class="image" title="TODTut_GetSunRotation.JPG"><img alt="TODTut_GetSunRotation.JPG" src="https://d26ilriwvtzlb.cloudfront.net/f/fc/TODTut_GetSunRotation.JPG" width="1220" height="553" /></a>
+</p><p><a href="indexe5fe.html?title=File:TODTut_GetSunRotation.JPG" class="image" title="TODTut_GetSunRotation.JPG"><img alt="TODTut_GetSunRotation.JPG" src="https://d26ilriwvtzlb.cloudfront.net/f/fc/TODTut_GetSunRotation.JPG" width="1220" height="553" /></a>
 </p><p>A quick overview:
 </p>
 <ul><li> First of all, we get the rotation of our lamp.</li>
@@ -268,7 +268,7 @@ Transclusion expansion time report (%,ms,calls,template)
  -->
 </div>						<div class="printfooter">
 							Retrieved from "<a dir="ltr" href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Tutorial:_Time_of_Day&amp;oldid=99">https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Tutorial:_Time_of_Day&amp;oldid=99</a>"						</div>
-					<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Special:Categories" title="Special:Categories">Categories</a>: <ul><li><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Category:Tutorials&amp;action=edit&amp;redlink=1" class="new" title="Category:Tutorials (page does not exist)">Tutorials</a></li><li><a href="index17bc.html?title=Category:Blueprint" title="Category:Blueprint">Blueprint</a></li><li><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Category:Community_Created_Content" title="Category:Community Created Content">Community Created Content</a></li></ul></div></div>					<div class="visualClear"></div>
+					<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Special:Categories" title="Special:Categories">Categories</a>: <ul><li><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Category:Tutorials&amp;action=edit&amp;redlink=1" class="new" title="Category:Tutorials (page does not exist)">Tutorials</a></li><li><a href="index17bc.html?title=Category:Blueprint" title="Category:Blueprint">Blueprint</a></li><li><a href="index290f-2.html?title=Category:Community_Created_Content" title="Category:Community Created Content">Community Created Content</a></li></ul></div></div>					<div class="visualClear"></div>
 									</div>
 			</div>
 		</div>

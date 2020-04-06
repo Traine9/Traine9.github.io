@@ -79,7 +79,7 @@ window.__locale = '';
 											<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
 						<h3 id="p-namespaces-label">Namespaces</h3>
 						<ul>
-														<li id="ca-nstab-main" class="selected"><span><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Blueprint_Behavior_Tree_Tutorial" title="View the content page [c]" accesskey="c">Page</a></span></li>
+														<li id="ca-nstab-main" class="selected"><span><a href="index21d8.html?title=Blueprint_Behavior_Tree_Tutorial" title="View the content page [c]" accesskey="c">Page</a></span></li>
 							<li id="ca-talk" class="new"><span><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Talk:Blueprint_Behavior_Tree_Tutorial&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></span></li>
 						</ul>
 					</div>
@@ -99,8 +99,8 @@ window.__locale = '';
 						<h3 id="p-views-label">Views</h3>
 						<ul>
 														<li id="ca-view" class="selected"><span><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Blueprint_Behavior_Tree_Tutorial">Read</a></span></li>
-							<li id="ca-viewsource"><span><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Blueprint_Behavior_Tree_Tutorial&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></span></li>
-							<li id="ca-history" class="collapsible"><span><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Blueprint_Behavior_Tree_Tutorial&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+							<li id="ca-viewsource"><span><a href="index21d8.html?title=Blueprint_Behavior_Tree_Tutorial&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></span></li>
+							<li id="ca-history" class="collapsible"><span><a href="index21d8.html?title=Blueprint_Behavior_Tree_Tutorial&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
 						</ul>
 					</div>
 										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
@@ -210,7 +210,7 @@ The BlackBoard asset allows you to store information in keys that can then be us
 <div class="thumb tnone"><div class="thumbinner" style="width:402px;"><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:BBT_CreateTask_01.JPG" class="image"><img alt="BBT CreateTask 01.JPG" src="https://d3ar1piqh1oeli.cloudfront.net/4/4f/BBT_CreateTask_01.JPG/400px-BBT_CreateTask_01.JPG" width="400" height="372" class="thumbimage" srcset="https://d26ilriwvtzlb.cloudfront.net/4/4f/BBT_CreateTask_01.JPG 1.5x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:BBT_CreateTask_01.JPG" class="internal" title="Enlarge"></a></div></div></div></div>
 <p>Next open up the created Task blueprint and go to its <i>EventGraph</i>. We need a <i>Receive Execute</i> event for when the task is called by the behavior tree and a <i>Finish Execute</i> event that returns success or failure upon task completion. Everything in between is task logic. 
 </p>
-<div class="thumb tnone"><div class="thumbinner" style="width:402px;"><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:BBT_TaskCreation_02.JPG" class="image"><img alt="BBT TaskCreation 02.JPG" src="https://d3ar1piqh1oeli.cloudfront.net/c/cc/BBT_TaskCreation_02.JPG/400px-BBT_TaskCreation_02.JPG" width="400" height="242" class="thumbimage" srcset="https://d3ar1piqh1oeli.cloudfront.net/c/cc/BBT_TaskCreation_02.JPG/600px-BBT_TaskCreation_02.JPG 1.5x, https://d3ar1piqh1oeli.cloudfront.net/c/cc/BBT_TaskCreation_02.JPG/800px-BBT_TaskCreation_02.JPG 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:BBT_TaskCreation_02.JPG" class="internal" title="Enlarge"></a></div></div></div></div>
+<div class="thumb tnone"><div class="thumbinner" style="width:402px;"><a href="index2133.html?title=File:BBT_TaskCreation_02.JPG" class="image"><img alt="BBT TaskCreation 02.JPG" src="https://d3ar1piqh1oeli.cloudfront.net/c/cc/BBT_TaskCreation_02.JPG/400px-BBT_TaskCreation_02.JPG" width="400" height="242" class="thumbimage" srcset="https://d3ar1piqh1oeli.cloudfront.net/c/cc/BBT_TaskCreation_02.JPG/600px-BBT_TaskCreation_02.JPG 1.5x, https://d3ar1piqh1oeli.cloudfront.net/c/cc/BBT_TaskCreation_02.JPG/800px-BBT_TaskCreation_02.JPG 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="index2133.html?title=File:BBT_TaskCreation_02.JPG" class="internal" title="Enlarge"></a></div></div></div></div>
 <p>Before we fill in the logic for this task we need to create a public variable of type BlackboardKeySelector to store the random location that we find. 
 <b>Note</b>: To create a public variable, make sure that the eye icon beside the variable is highlighted yellow and open. Do so by left clicking the icon. Name this Variable <i>Destination</i>
 </p>
@@ -218,7 +218,7 @@ The BlackBoard asset allows you to store information in keys that can then be us
 <p><br />
 We want this task to take the AI Characters current worldspace location and find a random point within a set radius. So we get the Actors current location, find a random point within a specified radius, and then set the BlackBoard value to that location. Make sure to set the Radius of the Get Random Point in Radius to something large, like 2000, or else the AI may just be told to move an inch and therefore ignore the instruction. *Note: Make sure <i>Success</i> is checked under "Task Completion."
 </p>
-<div class="thumb tnone"><div class="thumbinner" style="width:502px;"><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:Behavior_12.png" class="image"><img alt="Behavior 12.png" src="https://d3ar1piqh1oeli.cloudfront.net/1/12/Behavior_12.png/500px-Behavior_12.png" width="500" height="258" class="thumbimage" srcset="https://d3ar1piqh1oeli.cloudfront.net/1/12/Behavior_12.png/750px-Behavior_12.png 1.5x, https://d3ar1piqh1oeli.cloudfront.net/1/12/Behavior_12.png/1000px-Behavior_12.png 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:Behavior_12.png" class="internal" title="Enlarge"></a></div></div></div></div>
+<div class="thumb tnone"><div class="thumbinner" style="width:502px;"><a href="index1549.html?title=File:Behavior_12.png" class="image"><img alt="Behavior 12.png" src="https://d3ar1piqh1oeli.cloudfront.net/1/12/Behavior_12.png/500px-Behavior_12.png" width="500" height="258" class="thumbimage" srcset="https://d3ar1piqh1oeli.cloudfront.net/1/12/Behavior_12.png/750px-Behavior_12.png 1.5x, https://d3ar1piqh1oeli.cloudfront.net/1/12/Behavior_12.png/1000px-Behavior_12.png 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="index1549.html?title=File:Behavior_12.png" class="internal" title="Enlarge"></a></div></div></div></div>
 <h1><span class="mw-headline" id="Setting_Up_the_Behavior">Setting Up the Behavior</span></h1>
 <p>Open up the Behavior Tree and set it to use your created BlackBoard Asset
 </p>
@@ -230,7 +230,7 @@ We want this task to take the AI Characters current worldspace location and find
 <p><br />
 Now, to run the Behavior Tree we have to call it from the AI Controller so in the Graph of your Blueprint AI Controller create the following:
 </p>
-<div class="thumb tnone"><div class="thumbinner" style="width:602px;"><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:BBT_Behavior_02.JPG" class="image"><img alt="BBT Behavior 02.JPG" src="https://d3ar1piqh1oeli.cloudfront.net/4/48/BBT_Behavior_02.JPG/600px-BBT_Behavior_02.JPG" width="600" height="305" class="thumbimage" srcset="https://d3ar1piqh1oeli.cloudfront.net/4/48/BBT_Behavior_02.JPG/900px-BBT_Behavior_02.JPG 1.5x, https://d3ar1piqh1oeli.cloudfront.net/4/48/BBT_Behavior_02.JPG/1200px-BBT_Behavior_02.JPG 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:BBT_Behavior_02.JPG" class="internal" title="Enlarge"></a></div></div></div></div>
+<div class="thumb tnone"><div class="thumbinner" style="width:602px;"><a href="indexd07a.html?title=File:BBT_Behavior_02.JPG" class="image"><img alt="BBT Behavior 02.JPG" src="https://d3ar1piqh1oeli.cloudfront.net/4/48/BBT_Behavior_02.JPG/600px-BBT_Behavior_02.JPG" width="600" height="305" class="thumbimage" srcset="https://d3ar1piqh1oeli.cloudfront.net/4/48/BBT_Behavior_02.JPG/900px-BBT_Behavior_02.JPG 1.5x, https://d3ar1piqh1oeli.cloudfront.net/4/48/BBT_Behavior_02.JPG/1200px-BBT_Behavior_02.JPG 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="indexd07a.html?title=File:BBT_Behavior_02.JPG" class="internal" title="Enlarge"></a></div></div></div></div>
 <p>Please note to select the Behaviour Tree asset from the drop-down box.
 </p><p>This will begin the Behavior Tree Simulation as soon as the Begin Play event is called.
 </p>

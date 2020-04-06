@@ -79,7 +79,7 @@ window.__locale = '';
 											<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
 						<h3 id="p-namespaces-label">Namespaces</h3>
 						<ul>
-														<li id="ca-nstab-main" class="selected"><span><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Texture_Merging_With_UCanvasRenderTarget2D" title="View the content page [c]" accesskey="c">Page</a></span></li>
+														<li id="ca-nstab-main" class="selected"><span><a href="indexb831.html?title=Texture_Merging_With_UCanvasRenderTarget2D" title="View the content page [c]" accesskey="c">Page</a></span></li>
 							<li id="ca-talk" class="new"><span><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Talk:Texture_Merging_With_UCanvasRenderTarget2D&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></span></li>
 						</ul>
 					</div>
@@ -99,8 +99,8 @@ window.__locale = '';
 						<h3 id="p-views-label">Views</h3>
 						<ul>
 														<li id="ca-view" class="selected"><span><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Texture_Merging_With_UCanvasRenderTarget2D">Read</a></span></li>
-							<li id="ca-viewsource"><span><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Texture_Merging_With_UCanvasRenderTarget2D&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></span></li>
-							<li id="ca-history" class="collapsible"><span><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Texture_Merging_With_UCanvasRenderTarget2D&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+							<li id="ca-viewsource"><span><a href="indexb831.html?title=Texture_Merging_With_UCanvasRenderTarget2D&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></span></li>
+							<li id="ca-history" class="collapsible"><span><a href="indexb831.html?title=Texture_Merging_With_UCanvasRenderTarget2D&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
 						</ul>
 					</div>
 										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
@@ -156,7 +156,7 @@ window.__locale = '';
 </div>
 
 <h2><span class="mw-headline" id="Motivation">Motivation</span></h2>
-<p>In multiplayer games, it's quite common to have customizable characters and support changing out different costumes and gear. A common way of doing so is with the <a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Modular_Pawn" title="Modular Pawn">Modular Pawn</a> approach. Possibly combined with <a rel="nofollow" class="external text" href="https://docs.unrealengine.com/latest/INT/API/Runtime/Engine/FSkeletalMeshMerge/index.html">FSkeletalMeshMerge</a>. For certain types of costume pieces though, using modular pawns is somewhat overkill. Gloves or tight fitting pats for example would be simple to create as a texture. Tattoos/war paint/scars also cannot be easily made as meshes. It would be nice if we were able to make textures in layers and then combine them into a single texture. Blending two textures inside a material could be used for this purpose, but that comes with the cost of extra texture samples and blending.
+<p>In multiplayer games, it's quite common to have customizable characters and support changing out different costumes and gear. A common way of doing so is with the <a href="indexcc00.html?title=Modular_Pawn" title="Modular Pawn">Modular Pawn</a> approach. Possibly combined with <a rel="nofollow" class="external text" href="https://docs.unrealengine.com/latest/INT/API/Runtime/Engine/FSkeletalMeshMerge/index.html">FSkeletalMeshMerge</a>. For certain types of costume pieces though, using modular pawns is somewhat overkill. Gloves or tight fitting pats for example would be simple to create as a texture. Tattoos/war paint/scars also cannot be easily made as meshes. It would be nice if we were able to make textures in layers and then combine them into a single texture. Blending two textures inside a material could be used for this purpose, but that comes with the cost of extra texture samples and blending.
 </p>
 <h2><span class="mw-headline" id="UCanvasRenderTarget2D">UCanvasRenderTarget2D</span></h2>
 <p>The <a rel="nofollow" class="external text" href="https://docs.unrealengine.com/latest/INT/API/Runtime/Engine/Engine/UCanvasRenderTarget2D/index.html">UCanvasRenderTarget2D</a> class is an incredibly useful tool for creating textures at runtime. Not much documentation seems to exist for it, but it's incredibly powerful in that  <a rel="nofollow" class="external text" href="https://docs.unrealengine.com/latest/INT/API/Runtime/Engine/Engine/UCanvas/index.html">UCanvas</a> methods can be used to draw into textures. The following section will demonstrate the use of the <a rel="nofollow" class="external text" href="https://docs.unrealengine.com/latest/INT/API/Runtime/Engine/Engine/UCanvasRenderTarget2D/index.html">UCanvasRenderTarget2D</a> class. If you just want to copy the texture merging code into your project, then skip towards the end.

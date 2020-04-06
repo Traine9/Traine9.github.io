@@ -79,7 +79,7 @@ window.__locale = '';
 											<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
 						<h3 id="p-namespaces-label">Namespaces</h3>
 						<ul>
-														<li id="ca-nstab-main" class="selected"><span><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Blueprint_Multiplayer_Respawn" title="View the content page [c]" accesskey="c">Page</a></span></li>
+														<li id="ca-nstab-main" class="selected"><span><a href="indexbb03.html?title=Blueprint_Multiplayer_Respawn" title="View the content page [c]" accesskey="c">Page</a></span></li>
 							<li id="ca-talk" class="new"><span><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Talk:Blueprint_Multiplayer_Respawn&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></span></li>
 						</ul>
 					</div>
@@ -99,8 +99,8 @@ window.__locale = '';
 						<h3 id="p-views-label">Views</h3>
 						<ul>
 														<li id="ca-view" class="selected"><span><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Blueprint_Multiplayer_Respawn">Read</a></span></li>
-							<li id="ca-viewsource"><span><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Blueprint_Multiplayer_Respawn&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></span></li>
-							<li id="ca-history" class="collapsible"><span><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Blueprint_Multiplayer_Respawn&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+							<li id="ca-viewsource"><span><a href="indexbb03.html?title=Blueprint_Multiplayer_Respawn&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></span></li>
+							<li id="ca-history" class="collapsible"><span><a href="indexbb03.html?title=Blueprint_Multiplayer_Respawn&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
 						</ul>
 					</div>
 										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
@@ -137,7 +137,7 @@ window.__locale = '';
 															<div id="jump-to-nav" class="mw-jump">
 						Jump to:						<a href="#mw-head">navigation</a>, 						<a href="#p-search">search</a>
 					</div>
-					<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><p><b>Prerequisites</b>&#160;: Go through Epic's <a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Blueprint_Networking" title="Blueprint Networking">Blueprint Networking</a> tutorial and have a properly <a rel="nofollow" class="external text" href="https://forums.unrealengine.com/showthread.php?2107-Come-Learn-Blueprint-Multiplayer-with-me!-(aka-Tom-s-a-Glutton-for-Punishment)&amp;p=20372&amp;viewfull=1#post20372">working Multiplayer ready Pawn</a>.
+					<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><p><b>Prerequisites</b>&#160;: Go through Epic's <a href="indexae2b.html?title=Blueprint_Networking" title="Blueprint Networking">Blueprint Networking</a> tutorial and have a properly <a rel="nofollow" class="external text" href="https://forums.unrealengine.com/showthread.php?2107-Come-Learn-Blueprint-Multiplayer-with-me!-(aka-Tom-s-a-Glutton-for-Punishment)&amp;p=20372&amp;viewfull=1#post20372">working Multiplayer ready Pawn</a>.
 </p><p><b>Skill Level</b>: Intermediate
 </p><p><b>Engine Version</b>: 4.1.0
 </p><p><br />
@@ -158,7 +158,7 @@ Before you start, make sure your pawn can fully function under dedicated server 
 </div>
 
 <h2><span class="mw-headline" id="Introduction">Introduction</span></h2>
-<p>It took me to dig through source code to come up with this respawn method, which mimics how a proper client side requested respawn should work. The core idea of how it works requires that you understand how replication works, so PLEASE make sure you go through Epic's <a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Blueprint_Networking" title="Blueprint Networking">Blueprint Networking</a> tutorial before you continue, otherwise you will be blindly follow my example and don't know how to change to fit your needs.
+<p>It took me to dig through source code to come up with this respawn method, which mimics how a proper client side requested respawn should work. The core idea of how it works requires that you understand how replication works, so PLEASE make sure you go through Epic's <a href="indexae2b.html?title=Blueprint_Networking" title="Blueprint Networking">Blueprint Networking</a> tutorial before you continue, otherwise you will be blindly follow my example and don't know how to change to fit your needs.
 </p><p>I also assume you already got a working Pawn that replicated and control properly, if you have any key/button inside your Pawn's blueprint, please make sure that it was replaced with a action/axis mapping in <b>Menu-&gt;Edit-&gt;Project Settings-&gt;Engine section-&gt;Input</b>.
 </p><p>This tutorial will not modify your Pawn blueprint, the only required blueprint to modify is a GameMode and a PlayerController blueprint. Also, I will not be covering how to select player start, you can refer to the thread linked in the Prerequisites and Tom provided a method as a starting point. For this tutorial, we will only need one PlayerStart and let the engine handle initial spawning.
 </p>
@@ -174,7 +174,7 @@ Before you start, make sure your pawn can fully function under dedicated server 
 </p>
 <h2><span class="mw-headline" id="Blueprint_implementation">Blueprint implementation</span></h2>
 <h3><span class="mw-headline" id="First.2C_the_custom_GameMode_to_handle_respawn:">First, the custom GameMode to handle respawn:</span></h3>
-<div class="floatleft"><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:BP_Respawn_GameMode.png" class="image"><img alt="BP Respawn GameMode.png" src="https://d26ilriwvtzlb.cloudfront.net/2/2c/BP_Respawn_GameMode.png" width="1920" height="734" /></a></div>
+<div class="floatleft"><a href="index7e66.html?title=File:BP_Respawn_GameMode.png" class="image"><img alt="BP Respawn GameMode.png" src="https://d26ilriwvtzlb.cloudfront.net/2/2c/BP_Respawn_GameMode.png" width="1920" height="734" /></a></div>
 <ol><li> add a custom event by right click in empty space, then Add Event-&gt;Custom Events, I named it <b>respawn</b></li>
 <li> make sure in detail tab, change replication settings to <b>Run On Server</b> and check <b>Reliable</b></li>
 <li> add a new input and set the input type to <b>PlayerController</b>, do NOT use your custom player controller type( that ends with _C )</li>
@@ -189,7 +189,7 @@ Before you start, make sure your pawn can fully function under dedicated server 
 <p><br />
 </p>
 <h3><span class="mw-headline" id="Second.2C_the_PlayerController:">Second, the PlayerController:</span></h3>
-<div class="floatleft"><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:BP_Respawn_PlayerController.png" class="image"><img alt="BP Respawn PlayerController.png" src="https://d26ilriwvtzlb.cloudfront.net/f/fb/BP_Respawn_PlayerController.png" width="1920" height="714" /></a></div>
+<div class="floatleft"><a href="index03c7.html?title=File:BP_Respawn_PlayerController.png" class="image"><img alt="BP Respawn PlayerController.png" src="https://d26ilriwvtzlb.cloudfront.net/f/fb/BP_Respawn_PlayerController.png" width="1920" height="714" /></a></div>
 <ol><li> add the respawn input event you bind in your project settings</li>
 <li> add a custom event by right click in empty space, then Add Event-&gt;Custom Events</li>
 <li> name your custom event, in my case <b>requestGMRespawn</b></li>

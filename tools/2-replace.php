@@ -9,6 +9,7 @@ class Tool_Example {
             foreach ($item['title'] as $item2) {
                 $path = $item2['path'];
                 $title = $item2['title'];
+                $title = str_replace(' ', '_', $title);
                 $title = trim(preg_quote($title, '/'), '/');
                 $htmlFile = pathinfo($path, PATHINFO_BASENAME);
                 $pregReplace =
