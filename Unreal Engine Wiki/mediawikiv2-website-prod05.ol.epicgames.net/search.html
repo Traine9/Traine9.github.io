@@ -57,7 +57,7 @@
             fetch(url)
                 .then(res => res.json())
                 .then((out) => {
-                    out.map(value => value.visible = false)
+                    out.map(value => { value.visible = true; return value;})
                     console.log(out);
                     this.searchList = out;
                 })
