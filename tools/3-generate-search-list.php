@@ -22,7 +22,7 @@ class Tool_Example {
             );
         };
         $path = 'Unreal Engine Wiki/mediawikiv2-website-prod05.ol.epicgames.net/search.json';
-        file_put_contents($path, json_encode($pathArray));
+        file_put_contents($path, json_encode(array_values($pathArray)));
     }
     public function getDirContents($dir) {
         $path = array();

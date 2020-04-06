@@ -38,10 +38,10 @@
 </head>
 <body>
 <div id="app">
-    <input type="text" id="myInput" onkeyup="searchFunction()" placeholder="Search for names..">
+    <input type="text" v-model="query" onkeyup="searchFunction()" placeholder="Search for names..">
 
     <ul id="myUL" >
-        <li v-on:keyup="" v-for="searchList in item"><a v-bind:href="item.path" >{{item.title}}</a></li>
+        <li v-on:keyup="" v-for="item in searchList"><a v-bind:href="item.path" >{{item.title}}</a></li>
     </ul>
 </div>
 
@@ -50,15 +50,15 @@
     var app = new Vue({
         el: '#app',
         data: {
-            searchList: []
+            searchList: [],
+            query: ''
         },
         created: function () {
-            let url = 'search.json';
+            let url = 'https://traine9.github.io/Unreal%20Engine%20Wiki/mediawikiv2-website-prod05.ol.epicgames.net/search.json';
             fetch(url)
                 .then(res => res.json())
                 .then((out) => {
                     out.map(value => { value.visible = true; return value;})
-                    console.log(out);
                     this.searchList = out;
                 })
         },
