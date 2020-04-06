@@ -17,7 +17,7 @@ class Tool_Example {
                 continue;
             }
             $pathArray[$title] = array(
-                'path' => $path,
+                'path' => pathinfo($path, PATHINFO_BASENAME),
                 'title' => $title
             );
         };
