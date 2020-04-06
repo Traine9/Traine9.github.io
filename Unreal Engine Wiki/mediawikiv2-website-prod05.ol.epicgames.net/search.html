@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html class="client-nojs" lang="en" dir="ltr">
+<meta http-equiv="content-type" content="text/html;charset=UTF-8"/>
 <head>
     <style>
         #myInput {
@@ -17,7 +18,7 @@
             /* Remove default list styling */
             list-style-type: none;
             padding: 0;
-            margin: 0;
+            margin: 30px 0 0 0;
         }
 
         #myUL li a {
@@ -34,80 +35,94 @@
         #myUL li a:hover:not(.header) {
             background-color: #eee; /* Add a hover effect to all links, except for headers */
         }
+        #navbar {
+            position: fixed;
+            top:0;
+            background-color: #f6f6f6;
+            width: 100%;
+        }
     </style>
 </head>
 <body>
 <div id="app">
-    <input type="text" v-model="query" onkeyup="searchFunction()" placeholder="Search for names..">
-
-    <ul id="myUL" >
-        <li v-on:keyup="" v-for="item in searchList"><a v-bind:href="item.path" >{{item.title}}</a></li>
+    <div id="navbar" style="position:fixed;top:0">
+        <input type="text" v-on:keyup="doSearch" v-model="query" placeholder="Search for names..">
+        <label>
+            <input type="checkbox" v-on:change="doSearch" v-model="showAll">
+            Include system pages
+        </label>
+    </div>
+    <ul id="myUL">
+        <li v-bind:key="item.title" v-for="item in searchList" v-if="item.visible">
+            <a v-bind:href="item.path">{{item.title}}</a>
+        </li>
     </ul>
 </div>
 
 <script src="vue.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.15/lodash.min.js"></script>
 <script>
     var app = new Vue({
         el: '#app',
         data: {
             searchList: [],
-            query: ''
+            query: '',
+            showAll: false,
+            systemRecords: ['View source', 'Revision history of "', 'File:']
         },
         created: function () {
-            let url = 'https://traine9.github.io/Unreal%20Engine%20Wiki/mediawikiv2-website-prod05.ol.epicgames.net/search.json';
+            let url = 'search.json';
             fetch(url)
                 .then(res => res.json())
                 .then((out) => {
-                    out.map(value => { value.visible = true; return value;})
+                    out.map(value => {
+                        value.visible = true;
+                        let system = false;
+                        for (let record of this.systemRecords) {
+                            if (value.title.indexOf(record) === 0) {
+                                system = true;
+                                break;
+                            }
+                        }
+                        value.system = system;
+
+                        return value;
+                    });
                     this.searchList = out;
-                })
+                    let urlParams = new URLSearchParams(window.location.search);
+                    let query = urlParams.get('search');
+                    if (query) {
+                        this.query = query;
+                    }
+                    this._doSearch();
+                });
         },
         methods: {
-            doSearch: function (event) {
-
+            getVisibilityByObject: function (object, indexOf) {
+                return object.system && !this.showAll ? false : indexOf > -1;
+            },
+            doSearch: _.throttle(function () {
+                this._doSearch();
+            }, 500),
+            _doSearch: function () {
+                // Declare variables
+                let query = this.query.toUpperCase();
+                this.searchList.sort((a, b) => {
+                    let indexOfA = a.title.toUpperCase().indexOf(query);
+                    let indexOfB = b.title.toUpperCase().indexOf(query);
+                    a.visible = this.getVisibilityByObject(a, indexOfA);
+                    b.visible = this.getVisibilityByObject(b, indexOfB);
+                    if (indexOfA === indexOfB) {
+                        return a.title > b.title ? 1 : -1;
+                    } else {
+                        return indexOfA > indexOfB ? 1 : -1;
+                    }
+                });
+                let body = document.querySelector('body');
+                window.scrollTo(0, 0);
             }
         }
     })
-</script>
-
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        const urlParams = new URLSearchParams(window.location.search);
-        const query = urlParams.get('search');
-        let searchInput = document.getElementById('myInput');
-        searchInput.value = query;
-        searchFunction();
-    });
-
-    function searchFunction() {
-        // Declare variables
-        var input, filter, ul, li, a, i, txtValue;
-        input = document.getElementById('myInput');
-        filter = input.value.toUpperCase();
-        ul = document.getElementById("myUL");
-        li = ul.getElementsByTagName('li');
-
-        // Loop through all list items, and hide those who don't match the search query
-        for (i = 0; i < li.length; i++) {
-            a = li[i].getElementsByTagName("a")[0];
-            txtValue = a.textContent || a.innerText;
-            if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                li[i].style.display = "";
-            } else {
-                li[i].style.display = "none";
-            }
-        }
-        /*  li.sort(function (a, b) {
-              let txtValueA = a.textContent || a.innerText;
-              let txtValueB = b.textContent || b.innerText;
-              let indexOfA = txtValueA.toUpperCase().indexOf(filter);
-              let indexOfB = txtValueB.toUpperCase().indexOf(filter);
-              let result = 0;
-              if (indexOfA != indexOfB) {
-
-              }
-          });*/
-    }
 </script>
 </body>
 </html>
