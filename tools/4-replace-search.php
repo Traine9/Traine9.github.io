@@ -11,7 +11,8 @@ class Tool_Example {
             $content = file_get_contents($path);
             $content = preg_replace('/<form[^>]*id="searchform"[^>]*>/u', '<form id="searchform" action="search.html" method="GET">', $content);
             if ($content) {
-                file_put_contents($content, $path);
+                file_put_contents($path, $content);
+                print $path.PHP_EOL;
             }
         };
     }
