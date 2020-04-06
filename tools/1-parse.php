@@ -36,9 +36,7 @@ class Tool_Example {
             foreach ($pathArray as $pathTitle) {
                 $content = file_get_contents($path);
                 $title = $pathTitle['title'];
-                if ($title == 'AI Bot: Blueprint Scripting: AI Behavior Tree & NavMesh: Part 2') {
-                    xdebug_break();
-                }
+
                 $title = preg_replace('/\s/ius', '_', $title);
 
                 $preg = '/<a[^>]+href="([^"]+\.php.title='.trim(preg_quote($title, '/'), '/').'[^"]*)"[^>]+>/u';
