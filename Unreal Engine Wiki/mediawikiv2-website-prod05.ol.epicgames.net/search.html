@@ -2376,7 +2376,15 @@
     var app = new Vue({
         el: '#app',
         data: {
-            message: 'Hello Vue!'
+            searchList: []
+        },
+        created: function() {
+            let url = 'search.json';
+            fetch(url)
+                .then(res => res.json())
+                .then((out) => {
+                    this.searchList = out;
+                })
         }
     })
 </script>
@@ -2408,7 +2416,7 @@
                 li[i].style.display = "none";
             }
         }
-        li.sort(function (a, b) {
+      /*  li.sort(function (a, b) {
             let txtValueA = a.textContent || a.innerText;
             let txtValueB = b.textContent || b.innerText;
             let indexOfA = txtValueA.toUpperCase().indexOf(filter);
@@ -2417,6 +2425,6 @@
             if (indexOfA != indexOfB) {
 
             }
-        });
+        });*/
     }
 </script>
